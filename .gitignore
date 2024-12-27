@@ -2,9 +2,9 @@
 .venv
 *.egg-info
 .vscode
+.pytest_cache
 build
 dist
 
-spam
 test.py
 experiments.py
