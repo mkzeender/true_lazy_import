@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "true-lazy-import"
+version = "0.1.0"
+authors = [
+  { name="Marckie Zeender", email="mkzeender@gmail.com" },
+]
+description = "Finally, a lazy importer!"
+readme = "README.md"
+requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+py-modules = ["true_lazy_import"]
+
+[project.urls]
+Homepage = "https://github.com/mkzeender/ez_context"
+Issues = "https://github.com/mkzeender/ez_context/issues"

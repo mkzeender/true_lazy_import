@@ -1,0 +1,10 @@
+*__pycache__*
+.venv
+*.egg-info
+.vscode
+build
+dist
+
+spam
+test.py
+experiments.py
