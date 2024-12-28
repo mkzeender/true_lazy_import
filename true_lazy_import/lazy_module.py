@@ -2,11 +2,16 @@ from dataclasses import dataclass, field
 import sys
 from threading import RLock
 import types
+from typing import Any
 from types import ModuleType
-from typing import TypeIs
 from true_lazy_import._module_tools import static_getattr, static_hasattr, static_setattr
 from true_lazy_import.exceptions import LazyImportRuntimeError, NotLazyEnoughError
 from importlib.machinery import ModuleSpec
+
+if sys.version_info >= (3, 14):
+    from typing import TypeIs
+else:
+    from typing import TypeGuard as TypeIs
 
 
 # EXEMPT_ATTRS = {'__name__', '__spec__', '__package__', '__loader__', '__path__', '__file__', '__cached__'}
